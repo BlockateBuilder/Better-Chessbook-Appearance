@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Improves the appearance menu of chessbook.com",
     "icons": {
-        "128": "icon.png"
+        "48": "icon.png"
     },
     "content_scripts": [
         {
@@ -12,5 +12,13 @@
             "js": ["content.js"],
             "run_at": "document_idle"
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "better-chessbook-appearance@chessbook.com",
+            "data_collection_permissions": {
+                "required": ["none"]
+            }
+        }
+    }
 }
