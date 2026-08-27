@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Better Chessbook Appearance",
+    "version": "1.0.0",
+    "description": "Improves the appearance menu of chessbook.com",
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://chessbook.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
